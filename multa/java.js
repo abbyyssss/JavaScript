@@ -10,9 +10,9 @@ function calcular() {
  
    
     if (velocidade > 60) {
-        resposta.innerHTML = `<p style="color: red;">Você foi multado! Sua velocidade foi ${velocidade} km/h.</p>`;
+        resposta.innerHTML = `<p style="color: red;">Você foi multado otário haha! Sua velocidade foi ${velocidade} km/h.</p>`;
     } else {
-        resposta.innerHTML = `<p style="color: green;">Velocidade dentro do limite. Dirija com segurança!</p>`;
+        resposta.innerHTML = `<p style="color: green;">Velocidade dentro do limite, boa cz. Dirija com segurança!</p>`;
     }
 }
  
