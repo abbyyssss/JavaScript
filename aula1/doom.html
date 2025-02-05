@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body id="fundo">
+   
+    <p>Digite seu nome:</p>
+    <input type="text">
+ 
+    <p id="pokemon">pokemon favorito:</p>
+    <input type="pokemon">
+ 
+    <p class="lol">Personagem de lol favorito:</p>
+    <input type="lol">
+ 
+    <p name="pratica sexo?">a vida é isso ai</p>
+ 
+    <p id="info">A sua vida é boa?:</p>
+    <input type="text">
+ 
+    <script>
+        let fundo = window.document.getElementById("fundo")
+        fundo.style.background = "pink"
+ 
+        let p1 = document.getElementsByTagName("p")[0]
+        p1.style.color = "black"
+ 
+        let p2 = document.getElementById("pokemon")
+        p2.style.color = "white"
+ 
+        let p3 = document.getElementsByClassName("lol")[0]
+        p3.style.color = "purple"
+ 
+        let p4 = document.getElementsByName("pratica sexo?")[0]
+        p4.style.color = "green"
+ 
+        let p5 = document.querySelector("p#info")
+        p5.style.color = "bronw"
+       
+   
+ 
+    </script>
+</body>
+</html>
+ 
+ 

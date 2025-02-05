@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma de valores</title>
+</head>
+<body>
+    <h3>soma de valores</h3>
+    <input type="text" id="v1" name="valor1" placeholder="Digite o Primeiro valor">
+    <input type="text" id="v2" name="valor2" placeholder="Digite o Segundo valor">
+    <button onclick="CalcularSoma()">Calcular</button>
+    <p id="Resultado"></p>
+
+    <script>
+        function CalcularSoma(){
+            let valor1 = parseFloat(document.getElementById('v1').value);
+            let valor2 = parseFloat(document.getElementById('v2').value);
+            let soma = valor1 + valor2;
+            document.getElementById('Resultado').innerText = 'A soma é: ' + soma;
+        }
+    </script>
+</body>
+</html>

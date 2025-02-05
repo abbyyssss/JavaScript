@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <style>
+        .passou {
+            color: green;
+        }
+        .otario {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nota1 = parseFloat(window.prompt('Digite a nota 1: '));
+        let nota2 = parseFloat(window.prompt('Digite a nota 2: '));
+        let nota3 = parseFloat(window.prompt('Digite a nota 3: '));
+        let nota4 = parseFloat(window.prompt('Digite a nota 4: '));
+        let nota5 = parseFloat(window.prompt('Digite a nota 5: '));
+        let nota6 = parseFloat(window.prompt('Digite a nota 6: '));
+        let nota7 = parseFloat(window.prompt('Digite a nota 7: '));
+        let nota8 = parseFloat(window.prompt('Digite a nota 8: '));
+        let nota9 = parseFloat(window.prompt('Digite a nota 9: '));
+        let nota10 = parseFloat(window.prompt('Digite a nota 10: '));
+ 
+       
+        let notas = [nota1, nota2, nota3, nota4, nota5, nota6, nota7, nota8, nota9, nota10];
+ 
+        document.write("<h1>Resultado das Notas</h1>");
+        notas.forEach((nota, index) => {
+            let classe = nota >= 7 ? 'passou' : 'otario';
+            document.write(`<p class="${classe}">Nota ${index + 1}: ${nota}</p>`);
+        });
+    </script>
+</body>
+</html>
