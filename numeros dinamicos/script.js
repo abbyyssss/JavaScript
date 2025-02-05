@@ -15,13 +15,19 @@ let numeros = [];
 function adicionar() {
     let numero = parseInt(select.value);
 
+    // Verificando se o valor é um número válido
+    if (isNaN(numero)) {
+        alert('Por favor, selecione um número válido.');
+        return;
+    }
+
     // Verificando se o número já foi adicionado
     if (numeros.includes(numero)) {
         alert(`O número ${numero} já foi adicionado!`);
         return;
     }
 
-    // Verificando se o número está entre 0 a 100
+    // Verificando se o número está entre 0 e 100
     if (numero < 0 || numero > 100) {
         alert('Por favor, insira um número entre 0 e 100.');
         return;

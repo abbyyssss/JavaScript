@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IDADES</title>
+</head>
+<body id="corpo" onload="carregar()">
+
+    <header>
+        <h1>VERIFICADOR DE IDADE</h1>
+    </header>
+    <section>
+        <div>Verificador de idade</div>
+        <div>
+            <img id="imagem" src="m_bebe.jfif" alt="Paisagem manhã">
+        </div>
+        <div>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento">
+        </div>
+        <div>
+            <input type="radio" id="homem" name="genero" value="homem">
+            <label for="homem">Homem</label><br>
+            <input type="radio" id="mulher" name="genero" value="mulher">
+            <label for="mulher">Mulher</label>
+        </div>
+        <div>
+            <button onclick="verificarIdade()">Verificar</button>
+        </div>
+        <div id="resultado"></div>
+    </section>
+    <footer> 
+        <p>&copy; Abbys</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
