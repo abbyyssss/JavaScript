@@ -1,0 +1,64 @@
+/**{
+    cursor: url(sources/mamadeira.png)25 25, pointer;
+}*/
+
+
+body {
+    background-image: url(sources/bg2.avif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+
+.bb01{
+    width: 50px;
+    height: 50px;
+}
+
+.bb02{
+    width: 70px;
+    height: 70px;
+}
+
+.bb03{
+    width: 90px;
+    height: 90px;
+}
+
+.ladoA{
+    transform:scaleX(1)
+}
+.ladoB{
+    transform:scaleX(-1)
+}
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+    margin-right: 5px; 
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.vidas img {
+    width: 20px; 
+    height: 20px; 
+}

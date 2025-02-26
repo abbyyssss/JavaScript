@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>jogo</title>
+
+    <style>
+        *{
+            cursor: url(sources/mamadeira3.png)40 40, pointer;
+        }
+
+    </style>
+
+</head>
+<body onresize="ajustaPalco()">
+    <div class="painel">
+        <div class="vidas">
+            <img src="sources/coracaoc.png" id="v1">
+            <img src="sources/coracaoc.png" id="v2">
+            <img src="sources/coracaoc.png" id="v3">
+        </div>
+        
+        <div class="cronometro">
+                tempo restante: <span id="meuCronometro"></span>
+        </div>
+    </div>
+     
+    <script>
+    let criarBB = setInterval(function() {posRandomica ()},gerarTempo)
+
+    document.getElementById('meuCronometro').innerHTML 
+    </script>
+</body>
+</html>
